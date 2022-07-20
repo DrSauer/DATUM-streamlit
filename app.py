@@ -55,6 +55,7 @@ df.pop("time_stop")
 
 # All NaN is replaced with a string.
 df.fillna('Not available', inplace = True)
+df = df.reset_index()
 
 # Begin building app layout
 fig = px.histogram(df, x="location", y="time_taken", color="activity",
