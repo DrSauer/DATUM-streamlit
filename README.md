@@ -38,37 +38,37 @@ The output and the formulas associated with calculations are attached below:
 * Insights into the current project
   - Advance rate of activity selected
 
-This value is extracted from the dataset uploaded and no sidebar inputs are required. It will change based on the 3 filters selected previously.
+  This value is extracted from the dataset uploaded and no sidebar inputs are required. It will change based on the 3 filters selected previously.
 
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/advance_rate.PNG) 
+  ![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/advance_rate.PNG) 
 
   - Proportion of time spent on activity
 
-This value is extracted from the dataset uploaded and no sidebar inputs are required. It will change based on the 3 filters selected previously.
+  This value is extracted from the dataset uploaded and no sidebar inputs are required. It will change based on the 3 filters selected previously.
 
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/proportion_time.PNG)
+  ![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/proportion_time.PNG)
 
   - Removal/spraying rate
 
-This value, by default, will use the mean chainage and mean time taken. However, this is adjustable in the sidebar and the descriptive information of time taken and chainage per advance should be used to estimate a rough guess. Theoretical and overprofile of excavation/spraying area needs to be taken from the project brief and maunally inputted. By default, it will assume a combined area of 10 m^2.
+  This value, by default, will use the mean chainage and mean time taken. However, this is adjustable in the sidebar and the descriptive information of time taken and chainage per advance should be used to estimate a rough guess. Theoretical and overprofile of excavation/spraying area needs to be taken from the project brief and maunally inputted. By default, it will assume a combined area of 10 m^2.
 
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/volume_rate.PNG)
+  ![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/volume_rate.PNG)
 
   - Proportion of time spent on delays
 
-This value is extracted from the dataset uploaded and no sidebar inputs are required. It will change based on the 3 filters selected previously. If under the 'Activities' attribute, a 'Delay' activity is not present, this section will produce 0%. The recommended course of action is to rename which ever activity that is condered a cause of delay (e.g. 'Idle time' or 'Interruptions') to 'Delay' before uploading.
+  This value is extracted from the dataset uploaded and no sidebar inputs are required. It will change based on the 3 filters selected previously. If under the 'Activities' attribute, a 'Delay' activity is not present, this section will produce 0%. The recommended course of action is to rename which ever activity that is condered a cause of delay (e.g. 'Idle time' or 'Interruptions') to 'Delay' before uploading.
 
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/proportion_delays.PNG)
+  ![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/proportion_delays.PNG)
 
 * Projections for future projects
   - Estimated duration for activity
 
-By back-calculating the dimensions of the new tunnel, a required input in the side bar, a rough estimate of time taken for the activity cna be provided. it uses the removal/spraying rate from the previous calculation.
+  By back-calculating the dimensions of the new tunnel, a required input in the side bar, a rough estimate of time taken for the activity cna be provided. it uses the removal/spraying rate from the previous calculation.
 
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/estimated_duration.PNG)
+  ![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/estimated_duration.PNG)
 
   - Project duration after factoring in delays
 
-It will back calculate the project after factoring in delays. However, this section will not work if the 'Proportion of time spent on delays' is not working.
+  It will back calculate the project after factoring in delays. However, this section will not work if the 'Proportion of time spent on delays' is not working.
 
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/estimated_duration.PNG)
+  ![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/estimated_duration.PNG)
