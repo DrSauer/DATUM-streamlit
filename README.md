@@ -20,10 +20,10 @@ It is important that all the headings have the exact same alphabets and capitali
 ## Filters
 After inputting the data that needs to be analysed, filters are applied to obtain key insights of the data. The filters can be split into filters for the graph and filters for descriptions. 
 
-** Filter for dashboard **
+**Filter for dashboard**
 * On the right of the histogram, a legend of activities is provided to indicate the porportion of time spent at each location for respective activities. To visualize a specific activity, simply double click on the activity from the legend and it will segregate the data accordingly. To return to visualizing all the data, simply double click again and it will return to its default view.
 
-** Filter for key insights **
+**Filter for key insights**
 
 
 ## Output
