@@ -37,16 +37,16 @@ The output and the formulas associated with calculations are attached below:
 
 * Insights into the current project
   - Advance rate of activity selected
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/table_headings.PNG) 
+![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/advance_rate.PNG) 
   - Proportion of time spent on activity
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/table_headings.PNG)
+![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/proportion_time.PNG)
   - Removal/spraying rate
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/table_headings.PNG)
+![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/volume_rate.PNG)
   - Proportion of time spent on delays
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/table_headings.PNG)
+![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/proportion_delays.PNG)
 
 * Projections for future projects
   - Estimated duration for activity
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/table_headings.PNG)
+![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/estimated_duration.PNG)
   - Project duration after factoring in delays
-![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/table_headings.PNG)
+![](https://github.com/kenneth-yap/DATUM-streamlit/blob/main/estimated_duration.PNG)
