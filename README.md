@@ -31,7 +31,16 @@ After inputting the data that needs to be analysed, filters are applied to obtai
 
 ## Output
 
-The output of the app are the following:
+The output and the formulas associated with calculations are attached below:
 
 * A plotly dashboard indicating the time allocated for each activity at each location.
-* 
+
+* Insights into the current project
+- Advance rate of activity selected
+- Proportion of time spent on activity
+- Removal/spraying rate
+- Proportion of time spent on delays
+
+* Projections for future projects
+- Estimated duration for activity
+- Project duration after factoring in delays
