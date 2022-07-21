@@ -11,6 +11,9 @@ pd.options.mode.chained_assignment = None
 st.set_page_config(layout="wide")
 st.title('Data Analysis & Tunnel Management (DATuM) Dashboard')
 
+url = 'https://github.com/kenneth-yap/DATUM-streamlit/README.md'
+st.write('READ ME [link](%s)' % url)
+
 # Upload file
 uploaded_file = st.file_uploader('Upload a csv file', type = (['.csv']))
 
