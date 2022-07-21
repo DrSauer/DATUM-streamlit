@@ -11,6 +11,8 @@ It is important that all the headings have the exact same alphabets and capitali
 
 * Please clean the data before uploading. If the chainage is unusually large the web app will have problems uploading the file and crash. This can be mitigated by removing start and end chainages with unusually large magnitude. The same applies to time. Overall, the columns that need to be cleaned are: (i) tunnel_meter_start, (ii) tunnel_meter_finish, (iii) time_start and (iv) time_stop.
 
+* The maximum difference in largest and smallest chainage that the app can take is 1000000. Any chainage that is larger than this will cause the app to crash.
+
 * If the data is not cleaned properly, it will produce erronous results - garbage in, garbage out. 
 
 * The code will automatically calculate the time taken and the chainages between the start and end point. You don't have to create a new column on excel for that.
@@ -24,10 +26,12 @@ After inputting the data that needs to be analysed, filters are applied to obtai
 * On the right of the histogram, a legend of activities is provided to indicate the porportion of time spent at each location for respective activities. To visualize a specific activity, simply double click on the activity from the legend and it will segregate the data accordingly. To return to visualizing all the data, simply double click again and it will return to its default view.
 
 **Filter for key insights**
-
+* 3 filters are provided to extract key insights of an activity at a specific location for a selected excavation.
+* However, not all types of excavation is done at a given face. Therefore, a table that indicates the number of different excavations done at a given face is illustrated to show the type of excavation present at that location. Please use this table to reselect the excavations that you would like to observe. 
 
 ## Output
 
 The output of the app are the following:
 
 * A plotly dashboard indicating the time allocated for each activity at each location.
+* 
