@@ -5,7 +5,7 @@ This app was created to visualize the data collected from tunnelling projects. I
 ## Input
 The input of this app should be a .csv file with the following headings.
 
-![](images/heading.png?raw=true)
+![](images/table_headings.png?raw=true)
 
 It is important that all the headings have the exact same alphabets and capitalization. A few things to note:
 
