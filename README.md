@@ -11,7 +11,7 @@ It is important that all the headings have the exact same alphabets and capitali
 
 * Please clean the data before uploading. If the chainage is unusually large the web app will have problems uploading the file and crash. This can be mitigated by removing start and end chainages with unusually large magnitude. The same applies to time. Overall, the columns that need to be cleaned are: (i) tunnel_meter_start, (ii) tunnel_meter_finish, (iii) time_start and (iv) time_stop.
 
-* The maximum difference in largest and smallest chainage that the app can take is 1000000. Any chainage that is larger than this will cause the app to crash.
+* The maximum difference in largest and smallest chainage that the app can take is 1000000. Any chainage difference that is larger than this will cause the app to crash.
 
 * If the data is not cleaned properly, it will produce erronous results - garbage in, garbage out. 
 
