@@ -219,7 +219,7 @@ project_duration = st.sidebar.number_input('Estimated project duration [days]', 
 # Calculate the new volumetric time required
 if ((float(theo_area_new) + float(over_area_new)) >0) & (float(section_length) >0):
     new_time_volume = str(round((theo_area_new+over_area_new)*section_length/ \
-        round((float(select_chain)*(float(theo_area) + float(over_area))/select_time),3), 3)) + ' minutes'
+        (float(select_chain)*(float(theo_area) + float(over_area))/select_time), 3)) + ' minutes'
 else:
     new_time_volume = 'Fill in sidebar'
 
