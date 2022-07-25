@@ -180,8 +180,8 @@ with col6:
 
 st.sidebar.subheader('Adjustments for removal/spraying rate:')
 
-theo_area = st.sidebar.number_input('Theoretical excavation/spraying area (m^2)', value = 10, step=1e-3, format="%.3f")
-over_area = st.sidebar.number_input('Overprofile of excavation/spraying area (m^2)', value = 0, step=1e-3, format="%.3f")
+theo_area = st.sidebar.number_input('Theoretical excavation/spraying area (m^2)', value = 10.0, step=1e-3, format="%.3f")
+over_area = st.sidebar.number_input('Overprofile of excavation/spraying area (m^2)', value = 0.0, step=1e-3, format="%.3f")
 select_time = st.sidebar.number_input('Time taken per advance [min]', value = time_describe_df[1], step=1e-3, format="%.3f")
 select_chain = st.sidebar.number_input('Distance per advance [metres]', value = tunnel_chainage_df[1], step=1e-3, format="%.3f")
 
@@ -211,10 +211,10 @@ with col4:
 
 st.sidebar.subheader('Details of new project:')
 
-theo_area_new = st.sidebar.number_input('New theoretical excavation/spraying area [m^2]', min_value = 0, step=1e-3, format="%.3f")
-over_area_new = st.sidebar.number_input('New overprofile of excavation/spraying area [m^2]', min_value = 0, step=1e-3, format="%.3f")
-section_length = st.sidebar.number_input('New section length [metres]', min_value = 0, step=1e-3, format="%.3f")
-project_duration = st.sidebar.number_input('Estimated project duration [days]', min_value = 0, step=1e-3, format="%.3f")
+theo_area_new = st.sidebar.number_input('New theoretical excavation/spraying area [m^2]', min_value = 0.0, step=1e-3, format="%.3f")
+over_area_new = st.sidebar.number_input('New overprofile of excavation/spraying area [m^2]', min_value = 0.0, step=1e-3, format="%.3f")
+section_length = st.sidebar.number_input('New section length [metres]', min_value = 0.0, step=1e-3, format="%.3f")
+project_duration = st.sidebar.number_input('Estimated project duration [days]', min_value = 0.0, step=1e-3, format="%.3f")
 
 # Calculate the new volumetric time required
 if ((float(theo_area_new) + float(over_area_new)) >0) & (float(section_length) >0):
