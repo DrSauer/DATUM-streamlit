@@ -183,7 +183,7 @@ st.sidebar.subheader('Adjustments for removal/spraying rate:')
 theo_area = st.sidebar.number_input('Theoretical excavation/spraying area (m^2)', value = 10)
 over_area = st.sidebar.number_input('Overprofile of excavation/spraying area (m^2)', value = 0)
 select_time = st.sidebar.number_input('Time taken per advance [min]', value = time_describe_df[1])
-select_chain = st.sidebar.number_input('Distance per advance [metres]', min_value = tunnel_chainage_df[1])
+select_chain = st.sidebar.number_input('Distance per advance [metres]', value = tunnel_chainage_df[1])
 
 st.sidebar.markdown('* Time and chainage description is provided to estimate the inputs above, but remember to change activity filter to obtain the correct description.')
 
@@ -192,7 +192,7 @@ advance_rate = round(dff.groupby('date_logged').sum().sort_values(by='date_logge
 
 # Calculate the muck removal/spraying rate
 if ((float(theo_area) + float(over_area)) >0) & (select_time > 0) & (select_chain > 0):
-    volume_rate = str(round(float(select_chain)*(float(theo_area) + float(over_area)/select_time),3)) + ' m^3/min'
+    volume_rate = str(round((float(select_chain)*(float(theo_area) + float(over_area))/select_time),3)) + ' m^3/min'
 else:
     volume_rate = 'Fill in sidebar'
 
@@ -209,8 +209,6 @@ with col4:
         st.metric('Proportion of time spent on activity', str(time_percent) + ' %')
         st.metric('Proportion of time spent on delays', str(round(delay_time/total_time*100, 3)) + ' %')
 
-
-
 st.sidebar.subheader('Details of new project:')
 
 theo_area_new = st.sidebar.number_input('New theoretical excavation/spraying area [m^2]', min_value = 0)
@@ -221,15 +219,9 @@ project_duration = st.sidebar.number_input('Estimated project duration [days]', 
 # Calculate the new volumetric time required
 if ((float(theo_area_new) + float(over_area_new)) >0) & (float(section_length) >0):
     new_time_volume = str(round((theo_area_new+over_area_new)*section_length/ \
-        round(float(select_chain)*(float(theo_area) + float(over_area)/select_time),3),3)) + ' minutes'
+        round((float(select_chain)*(float(theo_area) + float(over_area))/select_time),3) + ' minutes'
 else:
     new_time_volume = 'Fill in sidebar'
-
-    # Calculate the new length time required
-if (section_length>0):
-    new_time_length = round(section_length/advance_rate,3)
-else:
-    new_time_length = 'Fill in sidebar'
 
     # Calculate the new time required
 if float(project_duration) > 0 :
