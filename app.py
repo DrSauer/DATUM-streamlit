@@ -11,7 +11,7 @@ pd.options.mode.chained_assignment = None
 st.set_page_config(layout="wide")
 st.title('Data Analysis & Tunnel Management (DATuM) Dashboard')
 
-url = 'https://github.com/kenneth-yap/DATUM-streamlit/blob/main/README.md'
+url = 'https://github.com/kenneth-yap/DATUM-streamlit/blob/d8e460492c008fbcb37ec80ea047f5909582609b/README.md'
 st.write('[INSTRUCTIONS](%s)' % url)
 
 # Upload file
