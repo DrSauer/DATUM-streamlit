@@ -20,7 +20,7 @@ uploaded_file = st.file_uploader('Upload a csv file', type = (['.csv']))
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 else: 
-    df = pd.read_csv('Activities_BSCU.csv')
+    df = pd.read_csv('activities_default.csv')
 
 # Data cleaner
 df.pop("user")
