@@ -6,8 +6,10 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import streamlit as st
 import matplotlib.pyplot as plt
+from PIL import Image
 pd.options.mode.chained_assignment = None
 
+image = Image.open('DSP.png')
 st.set_page_config(layout="wide")
 st.title('Data Analysis & Tunnel Management (DATuM) Dashboard')
 
@@ -178,6 +180,7 @@ with col6:
         , '75%':'Upper interquatile range [metres]', }, inplace = True)
     st.table(tunnel_chainage_df)
 
+st.sidebar.image(image, use_column_width=True)
 st.sidebar.subheader('Adjustments for removal/spraying rate:')
 
 theo_area = st.sidebar.number_input('Theoretical excavation/spraying area (m^2)', value = 10.0, step=1e-3, format="%.3f")
